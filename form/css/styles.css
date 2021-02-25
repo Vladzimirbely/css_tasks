@@ -1,0 +1,78 @@
+.form {
+    position: relative;
+    top: 20px;
+    height: 80px;
+}
+
+label {
+    position: absolute;
+    top: 1px;
+    transition: top 0.5s;
+    color: #008aff;
+}
+  
+input {
+    display: block;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #008aff;
+}
+  
+input:focus+label, input:not(:placeholder-shown)+label {
+    top: -15px;
+}
+
+.button-1, .button-2 {
+    position: relative;
+    top: 5px;
+    height: 40px;
+    width: 130px;
+    border-radius: 10px;
+    border: 1px solid #008aff;
+    background-color: #ffffff;
+    color: #008aff;
+}
+
+.button-1:hover {
+    background: #008aff;
+    color: #ffffff;
+}
+
+.button-2 {
+    position: relative;
+    top: 40px;
+    height: 40px;
+    width: 160px;
+    border-radius: 10px;
+    border: 1px solid #008aff;
+    background-color: #008aff;
+    color: #ffffff;
+}
+
+.button-2:hover {
+    background: #0076da;
+    color: #ffffff;
+}
+
+.checkbox {
+    position: relative;
+    top: 60px;
+}
+
+.text {
+    position: relative;
+    top: 70px;
+}
+
+a {
+    text-decoration: none;
+    color: #008aff;
+}
+
+a:hover {
+    color: #2278c0;
+}
+
+#name:valid, #tel:valid {
+    background-color: #6ff76f;
+}
